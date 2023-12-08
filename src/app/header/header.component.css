@@ -1,0 +1,64 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links .btn {
+    padding: 5px 10px;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    
+    padding: 20px;
+}
+
+.image img {
+    max-width: 50%;
+    height: auto;
+}
+
+.cafe-info {
+    flex: 1;
+    padding: 20px;
+}
+.table-booking-buttons {
+    display: flex;
+    flex-direction: row; 
+    gap: 50px; 
+    margin-bottom: 20px; 
+}
+.navbar-icon img {
+    width: 30px;
+    height: 30px;
+    
+    
+}
+.welcome-text {
+    font-weight: bold;
+    font-size: x-large;
+}
+.footer {
+    background-color: #333; /* Change to your desired background color */
+    color: white; /* Set text color for contrast */
+    
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}

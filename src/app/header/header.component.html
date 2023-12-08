@@ -1,0 +1,61 @@
+<nav class="navbar">
+    <p class="navbar-icon"><img src="https://m.media-amazon.com/images/I/71a0PWlJPUL._AC_UF1000,1000_QL80_.jpg" alt=""><p class="welcome-text">myCafe</p></p>
+    <p class="welcome-text">Welcome</p>
+    <div class="nav-links">
+      
+        <button type="button" class="btn btn-success">
+            <a routerLink="/login" routerLinkActive="active" class="nav-link">User Login</a>
+        </button>
+        <button type="button" class="btn btn-success">
+            <a routerLink="admin-login" routerLinkActive="active" class="nav-link">Admin Login</a>
+        </button>
+        <button type="button" class="btn btn-success">
+            <a routerLink="/register" routerLinkActive="active" class="nav-link">Create a user account</a>
+        </button>
+    </div>
+</nav>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+
+<div class="container">
+    <div class="content">
+       
+        <div class="image">
+            <img src="https://m.media-amazon.com/images/I/71a0PWlJPUL._AC_UF1000,1000_QL80_.jpg" alt="">
+            <img src="https://info.varsityvibe.co.za/wp-content/uploads/2020/03/chicken-licken.jpg" alt="">
+        </div><br><br>
+        <div class="table-booking-buttons">
+        <p>To book Tables 
+            <button type="button" class="btn btn-success">
+               <a routerLink="login" routerLinkActive="active" class="nav-link">Click here</a>
+            </button></p>
+        <p>Admin Login 
+                <button type="button" class="btn btn-success">
+                   <a routerLink="admin-login" routerLinkActive="active" class="nav-link">Click here</a>
+                </button></p>
+                <p>User Login 
+                    <button type="button" class="btn btn-success">
+                       <a routerLink="/login" routerLinkActive="active" class="nav-link">Click here</a>
+                    </button></p>
+                    <p>To Create Account 
+                        <button type="button" class="btn btn-success">
+                           <a routerLink="/register" routerLinkActive="active" class="nav-link">Click here</a>
+                        </button></p>
+        </div>
+        <div class="cafe-info">
+            <h2>Welcome to Our Cafes</h2>
+            <p>Experience the finest in coffee and culinary delights at our cafes. Whether you're looking for a cozy spot to work or a place to catch up with friends, our cafes offer a warm and inviting atmosphere.</p>
+            <p>Indulge in a wide range of freshly brewed coffees, teas, and artisanal beverages expertly crafted by our baristas. Our menu features a delightful selection of pastries, sandwiches, and wholesome treats to satisfy your cravings.</p>
+            <p>Visit us today and discover the perfect blend of comfort, community, and creativity. We take pride in providing an exceptional cafe experience that will keep you coming back for more.</p>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div >
+        <p>&copy; 2023 Your Cafe Name. All rights reserved.</p>
+    </div>
+</footer>

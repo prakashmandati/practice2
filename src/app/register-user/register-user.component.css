@@ -1,0 +1,10 @@
+.register{
+    margin: 20px auto;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color:antiquewhite;
+    opacity: 0.8;
+    color: black;
+}

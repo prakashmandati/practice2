@@ -1,0 +1,39 @@
+<div>
+    <app-admin-portal></app-admin-portal>
+    </div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-header">
+                <b>All Items</b>
+            </div>
+            <div class="card-body">
+                <table class="table table-stripped">
+                    <tr>
+                        <th>Item number</th>
+                        <th>Item name</th>
+                        <th>Item price</th>
+                        <th>Item description </th>
+                        <th>Item status</th>
+                        <th>Operations</th>
+                    </tr>
+                    <tr  *ngFor="let item of iteminfo" >
+                        <td>{{item.id}}</td>
+                        <td>{{item.itemname}}</td>
+                        <td>{{item.itemprice}}</td>
+                        <td>{{item.itemdesc}}</td>
+                        <td>{{item.status}}</td>
+                        <td>
+                            <input type="button"  value="Delete"  class="btn btn-danger btn-sm" (click)="DeleteItemInfo(item.id)" />
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="button"  value="Modify"  class="btn btn-primary btn-sm" (click)="UpdateItemInfo(item.id)" />
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>

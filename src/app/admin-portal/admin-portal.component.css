@@ -1,0 +1,51 @@
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: flex-start;
+}
+
+.navbar-icon img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links li {
+    margin-right: 0;
+
+    margin-right: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-links a.active {
+    font-weight: bold;
+    color: #FF5733;
+}
+
+.navbar-links a:hover {
+    color: #FF5733;
+}
+
+
+/* Add a class to target the "Logout" link */
+.navbar-links .logout-link {
+    /* Use margin-left: auto; to push the link to the right side */
+    margin-left: auto;
+}

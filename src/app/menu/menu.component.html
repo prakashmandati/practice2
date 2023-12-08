@@ -1,0 +1,72 @@
+<div>
+    <div
+  class="bg-image"
+  style="
+    background-image: url('https://images.unsplash.com/photo-1481833761820-0509d3217039?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2FmZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80');
+  background-size: cover; background-position:relative;
+  height: 100%;
+  ">
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <a routerLink="/welcome" routerLinkActive="active" class="nav-link">About Us</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact us</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a routerLink="/menu" routerLinkActive="active" class="nav-link">Menu</a> 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a routerLink="/booktable" routerLinkActive="active" class="nav-link">Book Table</a>  
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a routerLink="/table-list" routerLinkActive="active" class="nav-link">Reserved Tables</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a routerLink="/update" routerLinkActive="active" class="nav-link">Update User Details</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a routerLink="/change" routerLinkActive="active" class="nav-link">Change Password</a>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a routerLink="/" routerLinkActive="active" class="nav-link">Logout</a>            
+    </nav>
+    <router-outlet></router-outlet>
+
+    <div class="menu">
+        <h2 style="color: white;">Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Espresso</h3>
+                    <p>A strong black coffee brewed by forcing hot water through finely-ground coffee beans.</p>
+                    <p class="price">₹250</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Cappuccino</h3>
+                    <p>A coffee drink that combines espresso, steamed milk, and a rich layer of foam.</p>
+                    <p class="price">₹300.75</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Latte</h3>
+                    <p>A coffee drink made with espresso and steamed milk, often topped with a small amount of foam.</p>
+                    <p class="price">₹200.50</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Pizza</h3>
+                    <p>Delicious pizza topped with your favorite ingredients.</p>
+                    <p class="price">₹250</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Burger</h3>
+                    <p>A classic burger with juicy patty, lettuce, and cheese.</p>
+                    <p class="price">₹150</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Momos</h3>
+                    <p>Steamed or fried momos filled with flavorful fillings.</p>
+                    <p class="price">₹120</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Fries</h3>
+                    <p>Crispy and golden french fries seasoned to perfection.</p>
+                    <p class="price">₹100</p>
+                </div>
+            </div>
+
+    </div>
+</div> 
+</div>

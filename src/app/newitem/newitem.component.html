@@ -1,0 +1,53 @@
+<div>
+    <app-admin-portal></app-admin-portal>
+    </div>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-primary" >
+                <b>New Item</b>
+            </div>
+            <div class="card-body">
+                <form #itemForm="ngForm" (ngSubmit)="addNewItem(itemForm)">
+                <label>Item Name</label>
+                <input type="text"  [(ngModel)]="item.itemname" 
+                name="itemname" 
+                class="form-control" #nctrl="ngModel" required="required" />
+                <span class="errorinfo"  *ngIf="nctrl.touched && nctrl.invalid">
+                    <b>Item Name is Required</b>
+                </span>
+                <br />
+                <label>Item price</label>
+                <input type="text"  [(ngModel)]="item.itemprice" 
+                name="itemprice" class="form-control"  #pctrl="ngModel" required="required"/>
+                <span class="errorinfo"  *ngIf="pctrl.touched && pctrl.invalid">
+                    <b>Item price is Required</b>
+                </span>
+        
+                <br />
+                <label>Item Description</label>
+                <input type="text"  [(ngModel)]="item.itemdesc" 
+                name="itemdesc" class="form-control" #dctrl="ngModel" required="required" />
+                <span class="errorinfo"  *ngIf="dctrl.touched && dctrl.invalid">
+                    <b>Item Description is Required</b>
+                </span>
+
+                <br/>
+                <label>Item Status</label>
+                <input type="text"  [(ngModel)]="item.status" 
+                name="status" class="form-control" #sctrl="ngModel" required="required" />
+                <span class="errorinfo"  *ngIf="sctrl.touched && sctrl.invalid">
+                    <b>Item status is Required</b>
+                </span>
+            
+                <br />
+                <input type="submit"  value="Add new Item" class="btn btn-success" />
+                <br /><br />
+                <div [innerHTML]="msg" class="errorinfo"></div>
+            </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>

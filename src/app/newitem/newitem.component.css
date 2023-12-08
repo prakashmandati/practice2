@@ -1,0 +1,59 @@
+/* Center the form vertically and horizontally */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Style for the card */
+.card {
+    width: 100%;
+    max-width: 1000px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    background-color: white;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for form labels and inputs */
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for error messages */
+.errorinfo {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Style for the submit button */
+.btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Optional: Increase font size and add more spacing */
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,43 @@
+<div class="register">
+<h1 style="text-align: center;"> Create A New User Account</h1>
+
+<div class="container col-md-6">
+    
+    <form (ngSubmit)="userRegister()">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter Your First Name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name"
+            [(ngModel)]="user.firstName">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter Your Last Name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Your Last Name"
+            [(ngModel)]="user.lastName">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter Your Email Id</label>
+            <input type="email" class="form-control" id="emailId" name="emailId" placeholder="Enter Your Email"
+            [(ngModel)]="user.emailId">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Enter Your Phone Number</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Your Phone Number"
+            [(ngModel)]="user.phone">
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="text" class="form-control" id="password" name="password" placeholder="Enter Your Password"
+            [(ngModel)]="user.password">
+        </div>
+
+        <button type="submit" class="btn btn-success" >Register Now</button>
+
+        <p style="color: rgb(20, 82, 145);"><u><a routerLink="/login" routerLinkActive="active" class="nav-link">Go to login page</a></u></p>
+          
+    </form>
+</div>
+</div>

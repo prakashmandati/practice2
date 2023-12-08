@@ -1,0 +1,52 @@
+/* Center the card vertically and horizontally */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Style for the card */
+  .card {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style for the table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Style for alternating rows */
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Optional: Increase font size */
+  th, td {
+    font-size: 16px;
+  }
+  

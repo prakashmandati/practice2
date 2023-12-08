@@ -1,0 +1,63 @@
+/* Center the card content vertically and near the top */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Style for the card */
+.card {
+    width: 100%;
+    max-width: 1000px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Style for the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+/* Style for alternating rows */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for buttons */
+.btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Optional: Increase font size */
+th, td {
+    font-size: 16px;
+}
