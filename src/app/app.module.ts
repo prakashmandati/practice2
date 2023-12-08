@@ -26,6 +26,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { UpdateComponent } from './update/update.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { TableListComponent } from './table-list/table-list.component';
+import { DemoComponent } from './demo/demo.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { TableListComponent } from './table-list/table-list.component';
     RegisterUserComponent,
     UpdateComponent,
     ChangePasswordComponent,
-    TableListComponent
+    TableListComponent,
+    DemoComponent
    
     
   ],
